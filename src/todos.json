@@ -1,0 +1,40 @@
+{
+    "todos" : [
+        {
+            "title": "Nombre",
+            "responsible": "Nombre",
+            "description": "lorem impsum 1",
+            "priority": "low"
+        },
+        {
+            "title": "Apellido",
+            "responsible": "Apellido",
+            "description": "lorem impsum 2",
+            "priority": "medium"
+        },
+        {
+            "title": "Direccion",
+            "responsible": "Direccion",
+            "description": "lorem impsum 3",
+            "priority": "high"
+        },
+        {
+            "title": "Celular",
+            "responsible": "Celular",
+            "description": "lorem impsum 3",
+            "priority": "high"
+        },
+        {
+            "title": "Correo",
+            "responsible": "Correo",
+            "description": "lorem impsum 3",
+            "priority": "high"
+        },
+        {
+            "title": "Curp",
+            "responsible": "Curp",
+            "description": "lorem impsum 3",
+            "priority": "high"
+        }
+    ]
+}
