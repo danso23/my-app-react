@@ -20,6 +20,8 @@ class TodoForm extends Component {
         console.log(this.state);
     }
 
+
+
     render() {
         return(
             <div className="card mt-4">
@@ -39,7 +41,7 @@ class TodoForm extends Component {
                             name="responsible"
                             onChange={this.handleInput}
                             className="form-control"
-                            placeholder="Responsable"
+                            placeholder="Nombre del label"
                         />
                     </div>
                     <div className="form-group">
@@ -50,6 +52,9 @@ class TodoForm extends Component {
                             className="form-control"
                             placeholder="Descripcion"
                         />
+                    </div>
+                    <div className="form-group">
+                        <button className="btn btn-primary">Crear</button>
                     </div>
                 </form>
             </div>

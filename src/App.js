@@ -1,5 +1,8 @@
+/**
+ * @author DANIEL EDUARDO SOLIS CAN
+ * 
+ */
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 // import Navigation from './components/Navigation';
@@ -15,11 +18,11 @@ class App extends Component {
   }
 
   render(){
-    const todos = this.state.todos.map((todo, i) => {
+    const todos = this.state.todos.map((todo) => {
       return (
         <div className="col-md-4">
           <div className="card mt-4">
-            <div className="card-header">
+            <div className="card-header" key={todo.id}>            
               <h3>{todo.title}</h3>
               <span className="badge badge-pill badge-danger ml-2">{todo.priority}</span>
             </div>

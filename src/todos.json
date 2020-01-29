@@ -1,36 +1,42 @@
 {
     "todos" : [
         {
+            "id": 1,
             "title": "Nombre",
             "responsible": "Nombre",
             "description": "lorem impsum 1",
-            "priority": "low"
+            "priority": "Requerido"
         },
         {
+            "id": 2,
             "title": "Apellido",
             "responsible": "Apellido",
             "description": "lorem impsum 2",
-            "priority": "medium"
+            "priority": "No requerido"
         },
         {
+            "id": 3,
             "title": "Direccion",
             "responsible": "Direccion",
             "description": "lorem impsum 3",
             "priority": "high"
         },
         {
+            "id": 4,
             "title": "Celular",
             "responsible": "Celular",
             "description": "lorem impsum 3",
             "priority": "high"
         },
         {
+            "id": 5,
             "title": "Correo",
             "responsible": "Correo",
             "description": "lorem impsum 3",
             "priority": "high"
         },
         {
+            "id": 6,
             "title": "Curp",
             "responsible": "Curp",
             "description": "lorem impsum 3",
