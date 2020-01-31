@@ -10,22 +10,28 @@ class TodoForm extends Component {
             priority: 'low'
         };
         this.handleInput = this.handleInput.bind(this);
+        this.handleSumbit = this.handleSumbit.bind(this);
     }
 
-    handleInput(e) {
+    handleInput(e) {        
         const {value, name} = e.target;
         this.setState({
             [name]: value
-        });
-        console.log(this.state);
+        });        
     }
 
+    handleSumbit(e) {
+        e.preventDefault();
+        console.log(this.state);
+        this.props.onAddTodo(this.state);
+        console.log("Enviando...");
+    }
 
 
     render() {
         return(
             <div className="card mt-4">
-                <form className="card-body">
+                <form className="card-body" onSubmit={this.handleSumbit}>
                     <div className="form-group">
                         <input
                             type="text"

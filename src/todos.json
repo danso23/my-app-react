@@ -25,21 +25,28 @@
             "id": 4,
             "title": "Celular",
             "responsible": "Celular",
-            "description": "lorem impsum 3",
+            "description": "lorem impsum 4",
             "priority": "high"
         },
         {
             "id": 5,
             "title": "Correo",
             "responsible": "Correo",
-            "description": "lorem impsum 3",
+            "description": "lorem impsum 5",
             "priority": "high"
         },
         {
             "id": 6,
             "title": "Curp",
             "responsible": "Curp",
-            "description": "lorem impsum 3",
+            "description": "lorem impsum 6",
+            "priority": "high"
+        },
+        {
+            "id": 7,
+            "title": "RFC",
+            "responsible": "Rfc",
+            "description": "lorem impsum 7",
             "priority": "high"
         }
     ]

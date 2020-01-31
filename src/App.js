@@ -14,21 +14,46 @@ class App extends Component {
     super();
     this.state = {
       todos: todos
-    }
+    };
+    this.handleAddTodo = this.handleAddTodo.bind(this);
+    this.removeTodo = this.removeTodo.bind(this);
+  }
+
+  handleAddTodo(todo) {
+    this.setState({
+      todos: [...this.state.todos, todo]
+    });
+  }
+
+  removeTodo(index) {    
+    this.setState({
+      todos: this.state.todos.filter((e, i) => {
+        
+        return i !== index;
+      })
+    });
   }
 
   render(){
-    const todos = this.state.todos.map((todo) => {
+    const todos = this.state.todos.map((todo,i) => {
       return (
-        <div className="col-md-4">
+        <div className="col-md-4" key={i}>
           <div className="card mt-4">
-            <div className="card-header" key={todo.id}>            
+            <div className="card-header">
               <h3>{todo.title}</h3>
               <span className="badge badge-pill badge-danger ml-2">{todo.priority}</span>
             </div>
             <div className="card-body">
               <p>{todo.description}</p>
               <p>{todo.responsible}</p>
+            </div>
+            <div className="card-footer">
+              <button
+                className="btn btn-danger"
+                onClick={this.removeTodo.bind(this, i)}
+              >
+                Elminar
+              </button>
             </div>
           </div>
         </div>
@@ -44,8 +69,12 @@ class App extends Component {
         </nav>
 
         <div className="container">
-        <div className="row"><TodoForm /></div>
           <div className="row">
+            <div className="col-md-4">
+              <TodoForm onAddTodo={this.handleAddTodo} />
+            </div>
+          </div>
+          <div className="row">            
             { todos }
           </div>          
         </div>
